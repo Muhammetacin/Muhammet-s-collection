@@ -3,6 +3,7 @@
 const ITEMS_LIST = [
     {
         name: 'Dragon dagger',
+        type: 'Weapon',
         tradeable: 'Yes',
         equipable: 'Yes',
         stackable: 'No',
@@ -10,10 +11,11 @@ const ITEMS_LIST = [
         options: 'Wield',
         destroy: 'Drop',
         examine: 'A powerful dagger.',
-        image: 'https://oldschool.runescape.wiki/w/Dragon_dagger#/media/File:Dragon_dagger_detail.png'
+        image: 'https://oldschool.runescape.wiki/images/Dragon_dagger_detail.png?b7806'
     }, 
     {
         name: 'Dragon axe',
+        type: 'Weapon',
         tradeable: 'Yes',
         equipable: 'Yes',
         stackable: 'No',
@@ -21,10 +23,11 @@ const ITEMS_LIST = [
         options: 'Wield',
         destroy: 'Drop',
         examine: 'A very powerful axe.',
-        image: 'https://oldschool.runescape.wiki/w/Dragon_axe#/media/File:Dragon_axe_detail.png'
+        image: 'https://oldschool.runescape.wiki/images/Dragon_axe_detail.png?f429c'
     },
     {
         name: 'Dragon mace',
+        type: 'Weapon',
         tradeable: 'Yes',
         equipable: 'Yes',
         stackable: 'No',
@@ -32,10 +35,11 @@ const ITEMS_LIST = [
         options: 'Wield',
         destroy: 'Drop',
         examine: 'A spiky mace.',
-        image: 'https://oldschool.runescape.wiki/w/Dragon_mace#/media/File:Dragon_mace_detail.png'
+        image: 'https://oldschool.runescape.wiki/images/Dragon_mace_detail.png?e3ed5'
     },
     {
         name: 'Dragon scimitar',
+        type: 'Weapon',
         tradeable: 'Yes',
         equipable: 'Yes',
         stackable: 'No',
@@ -43,10 +47,11 @@ const ITEMS_LIST = [
         options: 'Wield',
         destroy: 'Drop',
         examine: 'A vicious, curved sword.',
-        image: 'https://oldschool.runescape.wiki/w/Dragon_scimitar#/media/File:Dragon_scimitar_detail.png'
+        image: 'https://oldschool.runescape.wiki/images/Dragon_scimitar_detail.png?3b303'
     },
     {
         name: 'Dragon longsword',
+        type: 'Weapon',
         tradeable: 'Yes',
         equipable: 'Yes',
         stackable: 'No',
@@ -54,10 +59,11 @@ const ITEMS_LIST = [
         options: 'Wield',
         destroy: 'Drop',
         examine: 'A vicious, curved sword.',
-        image: 'https://oldschool.runescape.wiki/w/Dragon_longsword#/media/File:Dragon_longsword_detail.png'
+        image: 'https://oldschool.runescape.wiki/images/Dragon_longsword_detail.png?e3ed5'
     },
     {
         name: 'Dragon battleaxe',
+        type: 'Weapon',
         tradeable: 'Yes',
         equipable: 'Yes',
         stackable: 'No',
@@ -65,10 +71,11 @@ const ITEMS_LIST = [
         options: 'Wield',
         destroy: 'Drop',
         examine: 'A vicious looking axe.',
-        image: 'https://oldschool.runescape.wiki/w/Dragon_battleaxe#/media/File:Dragon_battleaxe_detail.png'
+        image: 'https://oldschool.runescape.wiki/images/Dragon_battleaxe_detail.png?6ed9d'
     },
     {
         name: 'Dragon claws',
+        type: 'Weapon',
         tradeable: 'Yes',
         equipable: 'Yes',
         stackable: 'No',
@@ -76,10 +83,11 @@ const ITEMS_LIST = [
         options: 'Wield',
         destroy: 'Drop',
         examine: 'A set of fighting claws.',
-        image: 'https://oldschool.runescape.wiki/w/Dragon_claws#/media/File:Dragon_claws_detail.png'
+        image: 'https://oldschool.runescape.wiki/images/Dragon_claws_detail.png?bdc25'
     },
     {
         name: 'Dragon boots',
+        type: 'Weapon',
         tradeable: 'Yes',
         equipable: 'Yes',
         stackable: 'No',
@@ -91,6 +99,7 @@ const ITEMS_LIST = [
     },
     {
         name: 'Dragon full helm',
+        type: 'Armour',
         tradeable: 'Yes',
         equipable: 'Yes',
         stackable: 'No',
@@ -98,10 +107,11 @@ const ITEMS_LIST = [
         options: 'Wear',
         destroy: 'Drop',
         examine: 'Protects your head and looks impressive too.',
-        image: 'https://oldschool.runescape.wiki/w/Dragon_full_helm#/media/File:Dragon_full_helm_detail.png'
+        image: 'https://oldschool.runescape.wiki/images/Dragon_full_helm_detail.png?6edab'
     },
     {
         name: 'Dragon sq shield',
+        type: 'Armour',
         tradeable: 'Yes',
         equipable: 'Yes',
         stackable: 'No',
@@ -109,10 +119,11 @@ const ITEMS_LIST = [
         options: 'Wear',
         destroy: 'Drop',
         examine: 'An ancient and powerful looking Dragon Square shield.',
-        image: 'https://oldschool.runescape.wiki/w/Dragon_sq_shield#/media/File:Dragon_sq_shield_detail.png'
+        image: 'https://oldschool.runescape.wiki/images/Dragon_sq_shield_detail.png?c4189'
     },
     {
         name: 'Dragon platelegs',
+        type: 'Armour',
         tradeable: 'Yes',
         equipable: 'Yes',
         stackable: 'No',
@@ -120,10 +131,11 @@ const ITEMS_LIST = [
         options: 'Wear',
         destroy: 'Drop',
         examine: 'These look pretty heavy.',
-        image: 'https://oldschool.runescape.wiki/w/Dragon_platelegs#/media/File:Dragon_platelegs_detail.png'
+        image: 'https://oldschool.runescape.wiki/images/Dragon_platelegs_detail.png?e30c3'
     },
     {
         name: 'Dragon plateskirt',
+        type: 'Armour',
         tradeable: 'Yes',
         equipable: 'Yes',
         stackable: 'No',
@@ -131,10 +143,11 @@ const ITEMS_LIST = [
         options: 'Wear',
         destroy: 'Drop',
         examine: 'This looks pretty heavy.',
-        image: 'https://oldschool.runescape.wiki/w/Dragon_plateskirt#/media/File:Dragon_plateskirt_detail.png'
+        image: 'https://oldschool.runescape.wiki/images/Dragon_plateskirt_detail.png?3b303'
     },
     {
         name: 'Dragon chainbody',
+        type: 'Armour',
         tradeable: 'Yes',
         equipable: 'Yes',
         stackable: 'No',
@@ -142,10 +155,11 @@ const ITEMS_LIST = [
         options: 'Wear',
         destroy: 'Drop',
         examine: 'A series of connected metal rings.',
-        image: 'https://oldschool.runescape.wiki/w/Dragon_chainbody#/media/File:Dragon_chainbody_detail.png'
+        image: 'https://oldschool.runescape.wiki/images/Dragon_chainbody_detail.png?35048'
     },
     {
         name: 'Dragon platebody',
+        type: 'Armour',
         tradeable: 'Yes',
         equipable: 'Yes',
         stackable: 'No',
@@ -153,10 +167,11 @@ const ITEMS_LIST = [
         options: 'Wear',
         destroy: 'Drop',
         examine: 'Provides excellent protection.',
-        image: 'https://oldschool.runescape.wiki/w/Dragon_platebody#/media/File:Dragon_platebody_detail.png'
+        image: 'https://oldschool.runescape.wiki/images/Dragon_platebody_detail.png?6edab'
     },
     {
         name: 'Dragon gloves',
+        type: 'Armour',
         tradeable: 'No',
         equipable: 'Yes',
         stackable: 'No',
@@ -164,6 +179,6 @@ const ITEMS_LIST = [
         options: 'Wear',
         destroy: 'Drop',
         examine: 'A pair of very nice gloves.',
-        image: 'https://oldschool.runescape.wiki/w/Dragon_gloves#/media/File:Dragon_gloves_detail.png'
+        image: 'https://oldschool.runescape.wiki/images/Dragon_gloves_detail.png?9943d'
     },
 ]
