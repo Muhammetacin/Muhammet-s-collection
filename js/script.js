@@ -2,8 +2,8 @@
 import { ITEMS_LIST } from "./collection.js";
 
 // ITEMS_LIST.forEach((dragonItem) => {
-//     console.log(dragonItem);
-// })
+//     console.log(dragonItem.name);
+// });
 
 // console.log(ITEMS_LIST);
 
@@ -33,3 +33,17 @@ let card = document.createElement("div");
 card.classList.add("card");
 cardContainer.appendChild(card);
 // console.log(card);
+
+// TODO: create imageContainer and append to card
+let cardImageContainer = document.createElement("div");
+cardImageContainer.classList.add("img-wrapper");
+card.appendChild(cardImageContainer);
+// console.log(cardImageContainer);
+
+// TODO: create cardImage in cardImageContainer with src, alt and class
+let cardImage = document.createElement("img");
+cardImage.src = ITEMS_LIST[2].image;
+cardImage.alt = ITEMS_LIST[2].examine;
+cardImage.classList.add("card-img-top");
+cardImageContainer.appendChild(cardImage);
+// console.log(cardImage);
