@@ -47,3 +47,9 @@ cardImage.alt = ITEMS_LIST[2].examine;
 cardImage.classList.add("card-img-top");
 cardImageContainer.appendChild(cardImage);
 // console.log(cardImage);
+
+// TODO: create cardBody inside card with class
+let cardBody = document.createElement("div");
+cardBody.classList.add("card-body");
+card.appendChild(cardBody);
+console.log(cardBody);
