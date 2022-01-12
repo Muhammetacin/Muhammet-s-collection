@@ -16,7 +16,7 @@ When I was done with the static information it was time for the cards. I use Boo
 
 ### Cards
 
-The cards have an image (which gets pulled from online source) and a body with the name of the item, a description, a button (doesn't link to anywhere temporarily) and 'tags' in different colors. These are dynamic: if the item is Weapon it gets the color yellow (bg-warning class) and if it's an armour it gets a red background color (bg-danger class). I achieve that with an if-else block.
+The cards have an image (which gets pulled from online source) and a body with the name of the item, a description, a button that takes user to the item page (on OSRS Wiki) and 'tags' in different colors. These are dynamic: if the item is Weapon it gets the color yellow (bg-warning class) and if it's an armour it gets a red background color (bg-danger class). I achieve that with an if-else block.
 
 I create every element from top to bottom. What that means is I create the most outer div block first with all of its classes. Then, I create the first child of that element. For example: cardContainer -> card -> card-image -> img. After I finish that child (and children of child) I continue with the next sibling.
 I find this an easy solution because it's more readable for me. I don't have to return back and implement the children of siblings (I hope that makes sense? ^^').

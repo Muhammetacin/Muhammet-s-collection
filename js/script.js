@@ -94,7 +94,8 @@ cardBody.appendChild(cardButtonContainer);
 let cardButton = document.createElement("a");
 cardButton.classList.add("btn", "btn-dark");
 cardButton.appendChild(document.createTextNode("Buy " + item.name));
-cardButton.href = "#";
+cardButton.href = item.link;
+cardButton.target = "_blank";
 cardButtonContainer.appendChild(cardButton);
 
 });

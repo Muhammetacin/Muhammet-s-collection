@@ -12,7 +12,8 @@ const ITEMS_LIST = [
         destroy: 'Drop',
         examine: 'A powerful dagger.',
         image: 'https://oldschool.runescape.wiki/images/Dragon_dagger_detail.png?b7806',
-        description: 'The dragon dagger is the second-strongest dagger available in Old School RuneScape, behind the abyssal dagger. It can be wielded by players with at least 60 Attack after completion of the Lost City quest.'
+        description: 'The dragon dagger is the second-strongest dagger available in Old School RuneScape, behind the abyssal dagger. It can be wielded by players with at least 60 Attack after completion of the Lost City quest.',
+        link: 'https://oldschool.runescape.wiki/w/Dragon_dagger'
     }, 
     {
         name: 'Dragon axe',
@@ -25,7 +26,8 @@ const ITEMS_LIST = [
         destroy: 'Drop',
         examine: 'A very powerful axe.',
         image: 'https://oldschool.runescape.wiki/images/Dragon_axe_detail.png?f429c',
-        description: 'The dragon axe is the second strongest and fastest Woodcutting axe in the game after the crystal axe, and is tied with the 3rd age axe. It is 10% more efficient at chopping logs than the rune axe.'
+        description: 'The dragon axe is the second strongest and fastest Woodcutting axe in the game after the crystal axe, and is tied with the 3rd age axe. It is 10% more efficient at chopping logs than the rune axe.',
+        link: 'https://oldschool.runescape.wiki/w/Dragon_axe'
     },
     {
         name: 'Dragon mace',
@@ -38,7 +40,8 @@ const ITEMS_LIST = [
         destroy: 'Drop',
         examine: 'A spiky mace.',
         image: 'https://oldschool.runescape.wiki/images/Dragon_mace_detail.png?e3ed5',
-        description: 'The dragon mace is the fifth-strongest mace stat-wise after the Tzhaar-ket-em. It can only be wielded by players who have an Attack level of at least 60 and who have completed the Heroes\' Quest.'
+        description: 'The dragon mace is the fifth-strongest mace stat-wise after the Tzhaar-ket-em. It can only be wielded by players who have an Attack level of at least 60 and who have completed the Heroes\' Quest.',
+        link: 'https://oldschool.runescape.wiki/w/Dragon_mace'
     },
     {
         name: 'Dragon scimitar',
@@ -51,7 +54,8 @@ const ITEMS_LIST = [
         destroy: 'Drop',
         examine: 'A vicious, curved sword.',
         image: 'https://oldschool.runescape.wiki/images/Dragon_scimitar_detail.png?3b303',
-        description: 'The dragon scimitar is the strongest scimitar available in Old School RuneScape. It can only be wielded by players who have 60 Attack and have completed the Monkey Madness I quest. It also shares similar bonuses with Viggora\'s chainmace, with the chainmace being a crush weapon rather than a slash weapon.'
+        description: 'The dragon scimitar is the strongest scimitar available in Old School RuneScape. It can only be wielded by players who have 60 Attack and have completed the Monkey Madness I quest. It also shares similar bonuses with Viggora\'s chainmace, with the chainmace being a crush weapon rather than a slash weapon.',
+        link: 'https://oldschool.runescape.wiki/w/Dragon_scimitar'
     },
     {
         name: 'Dragon longsword',
@@ -64,7 +68,8 @@ const ITEMS_LIST = [
         destroy: 'Drop',
         examine: 'A vicious, curved sword.',
         image: 'https://oldschool.runescape.wiki/images/Dragon_longsword_detail.png?e3ed5',
-        description: 'The dragon longsword is the second-strongest longsword available in Old School RuneScape, and can only be wielded by players who have at least 60 Attack and have completed the Lost City quest.'
+        description: 'The dragon longsword is the second-strongest longsword available in Old School RuneScape, and can only be wielded by players who have at least 60 Attack and have completed the Lost City quest.',
+        link: 'https://oldschool.runescape.wiki/w/Dragon_longsword'
     },
     {
         name: 'Dragon battleaxe',
@@ -77,7 +82,8 @@ const ITEMS_LIST = [
         destroy: 'Drop',
         examine: 'A vicious looking axe.',
         image: 'https://oldschool.runescape.wiki/images/Dragon_battleaxe_detail.png?6ed9d',
-        description: 'The dragon battleaxe is the second-strongest battleaxe available, only behind the leaf-bladed battleaxe. It can only be wielded by members who have at least 60 Attack and who have completed the Heroes\' Quest.'
+        description: 'The dragon battleaxe is the second-strongest battleaxe available, only behind the leaf-bladed battleaxe. It can only be wielded by members who have at least 60 Attack and who have completed the Heroes\' Quest.',
+        link: 'https://oldschool.runescape.wiki/w/Dragon_battleaxe'
     },
     {
         name: 'Dragon claws',
@@ -90,7 +96,8 @@ const ITEMS_LIST = [
         destroy: 'Drop',
         examine: 'A set of fighting claws.',
         image: 'https://oldschool.runescape.wiki/images/Dragon_claws_detail.png?bdc25',
-        description: 'Dragon claws are a pair of metallic claws made from dragon metal, obtained as a rare reward for completing a raid in the Chambers of Xeric. Equipping them requires level 60 Attack.'
+        description: 'Dragon claws are a pair of metallic claws made from dragon metal, obtained as a rare reward for completing a raid in the Chambers of Xeric. Equipping them requires level 60 Attack.',
+        link: 'https://oldschool.runescape.wiki/w/Dragon_claws'
     },
     {
         name: 'Dragon gloves',
@@ -103,7 +110,8 @@ const ITEMS_LIST = [
         destroy: 'Drop',
         examine: 'A pair of very nice gloves.',
         image: 'https://oldschool.runescape.wiki/images/Dragon_gloves_detail.png?9943d',
-        description: 'Dragon gloves are Culinaromancer\'s gloves purchased from the Culinaromancer\'s Chest after completion of all eight Recipe for Disaster subquests.'
+        description: 'Dragon gloves are Culinaromancer\'s gloves purchased from the Culinaromancer\'s Chest after completion of all eight Recipe for Disaster subquests.',
+        link: 'https://oldschool.runescape.wiki/w/Dragon_gloves'
     },
     {
         name: 'Dragon boots',
@@ -116,7 +124,8 @@ const ITEMS_LIST = [
         destroy: 'Drop',
         examine: 'These will protect my feet.',
         image: 'https://oldschool.runescape.wiki/images/Dragon_boots_detail.png?35048',
-        description: 'Dragon boots are commonly used due to their strength bonus and relatively low cost. Thus, they are popular with those training the Slayer skill and player killing.'
+        description: 'Dragon boots are commonly used due to their strength bonus and relatively low cost. Thus, they are popular with those training the Slayer skill and player killing.',
+        link: 'https://oldschool.runescape.wiki/w/Dragon_boots'
     },
     {
         name: 'Dragon full helm',
@@ -129,7 +138,8 @@ const ITEMS_LIST = [
         destroy: 'Drop',
         examine: 'Protects your head and looks impressive too.',
         image: 'https://oldschool.runescape.wiki/images/Dragon_full_helm_detail.png?6edab',
-        description: 'The dragon full helm is a helmet that requires 60 Defence to equip. The dragon full helm gives better defence bonuses than its medium helm counterpart.'
+        description: 'The dragon full helm is a helmet that requires 60 Defence to equip. The dragon full helm gives better defence bonuses than its medium helm counterpart.',
+        link: 'https://oldschool.runescape.wiki/w/Dragon_full_helm'
     },
     {
         name: 'Dragon sq shield',
@@ -142,7 +152,8 @@ const ITEMS_LIST = [
         destroy: 'Drop',
         examine: 'An ancient and powerful looking Dragon Square shield.',
         image: 'https://oldschool.runescape.wiki/images/Dragon_sq_shield_detail.png?c4189',
-        description: 'The dragon sq shield is the strongest square shield in Old School RuneScape. It requires 60 Defence to wield, along with completion of Legends\' Quest.'
+        description: 'The dragon sq shield is the strongest square shield in Old School RuneScape. It requires 60 Defence to wield, along with completion of Legends\' Quest.',
+        link: 'https://oldschool.runescape.wiki/w/Dragon_sq_shield'
     },
     {
         name: 'Dragon platelegs',
@@ -155,7 +166,8 @@ const ITEMS_LIST = [
         destroy: 'Drop',
         examine: 'These look pretty heavy.',
         image: 'https://oldschool.runescape.wiki/images/Dragon_platelegs_detail.png?e30c3',
-        description: 'Dragon platelegs are a rare piece of armour that require a Defence level of 60 to be worn. They are dropped by most metal dragons, brutal black dragons, Skeletal Wyverns and revenants.'
+        description: 'Dragon platelegs are a rare piece of armour that require a Defence level of 60 to be worn. They are dropped by most metal dragons, brutal black dragons, Skeletal Wyverns and revenants.',
+        link: 'https://oldschool.runescape.wiki/w/Dragon_platelegs'
     },
     {
         name: 'Dragon plateskirt',
@@ -168,7 +180,8 @@ const ITEMS_LIST = [
         destroy: 'Drop',
         examine: 'This looks pretty heavy.',
         image: 'https://oldschool.runescape.wiki/images/Dragon_plateskirt_detail.png?3b303',
-        description: 'The dragon plateskirt is a rare piece of armour that requires a Defence level of 60 to be worn. It has the same stats as the dragon platelegs.'
+        description: 'The dragon plateskirt is a rare piece of armour that requires a Defence level of 60 to be worn. It has the same stats as the dragon platelegs.',
+        link: 'https://oldschool.runescape.wiki/w/Dragon_plateskirt'
     },
     {
         name: 'Dragon chainbody',
@@ -181,7 +194,8 @@ const ITEMS_LIST = [
         destroy: 'Drop',
         examine: 'A series of connected metal rings.',
         image: 'https://oldschool.runescape.wiki/images/Dragon_chainbody_detail.png?35048',
-        description: 'The dragon chainbody is the highest tier of chainbody in the game, and one of the rarest pieces of armour. One must have a Defence level of 60 to equip a Dragon chainbody.'
+        description: 'The dragon chainbody is the highest tier of chainbody in the game, and one of the rarest pieces of armour. One must have a Defence level of 60 to equip a Dragon chainbody.',
+        link: 'https://oldschool.runescape.wiki/w/Dragon_chainbody'
     },
     {
         name: 'Dragon platebody',
@@ -194,7 +208,8 @@ const ITEMS_LIST = [
         destroy: 'Drop',
         examine: 'Provides excellent protection.',
         image: 'https://oldschool.runescape.wiki/images/Dragon_platebody_detail.png?6edab',
-        description: 'A dragon platebody is the product of combining a dragon chainbody, dragon metal lump, and dragon metal shard at the Dragon Forge.'
+        description: 'A dragon platebody is the product of combining a dragon chainbody, dragon metal lump, and dragon metal shard at the Dragon Forge.',
+        link: 'https://oldschool.runescape.wiki/w/Dragon_platebody'
     }
 ]
 
