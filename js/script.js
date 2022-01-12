@@ -53,3 +53,10 @@ let cardBody = document.createElement("div");
 cardBody.classList.add("card-body");
 card.appendChild(cardBody);
 console.log(cardBody);
+
+// TODO: create h5 heading, span badges in cardBody with classes
+let cardHeadingH5 = document.createElement("h5");
+cardHeadingH5.classList.add("card-title");
+cardHeadingH5.appendChild(document.createTextNode(ITEMS_LIST[2].name));
+cardBody.appendChild(cardHeadingH5);
+// console.log(cardHeadingH5);
