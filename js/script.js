@@ -27,3 +27,9 @@ let cardContainer = document.createElement("div");
 cardContainer.classList.add("col", "d-flex", "align-items-stretch");
 containerDiv.appendChild(cardContainer);
 // console.log(cardContainer);
+
+// TODO: create the card itself and append to cardContainer, for every card needed
+let card = document.createElement("div");
+card.classList.add("card");
+cardContainer.appendChild(card);
+// console.log(card);
