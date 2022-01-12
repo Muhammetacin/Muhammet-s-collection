@@ -8,7 +8,8 @@
 // TODO: import ITEMS_LIST from collection.js
 import { ITEMS_LIST as item } from "./collection.js";
 
-const shuffledItemsList = item.sort((a, b) => 0.5 - Math.random());
+// Shuffle the order of the list to show cards randomly
+item.sort((a, b) => 0.5 - Math.random());
 
 // TODO: select section to append new children (cards)
 const section = document.querySelector("section");
