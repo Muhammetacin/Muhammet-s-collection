@@ -11,14 +11,24 @@ import { ITEMS_LIST } from "./collection.js";
 const section = document.querySelector("section");
 
 // TODO: create h3 heading title "Items" and add it to the top of section (as a first child), only one is needed for the page
-let headingH3Items = document.createElement("h3")
+let headingH3Items = document.createElement("h3");
 headingH3Items.appendChild(document.createTextNode("Items"));
 section.appendChild(headingH3Items);
 // console.log(headingH3Items);
 
 // TODO: create div with classes (container div for cards) and add to section, only one is needed for the page
 let containerDiv = document.createElement("div");
-containerDiv.classList.add("row", "d-flex", "flex-column", "flex-md-row", "flex-lg-row", "row-cols-md-2", "row-cols-lg-4", "m-auto", "g-3");
+containerDiv.classList.add(
+  "row",
+  "d-flex",
+  "flex-column",
+  "flex-md-row",
+  "flex-lg-row",
+  "row-cols-md-2",
+  "row-cols-lg-4",
+  "m-auto",
+  "g-3"
+);
 section.appendChild(containerDiv);
 // console.log(containerDiv);
 
@@ -52,7 +62,7 @@ cardImageContainer.appendChild(cardImage);
 let cardBody = document.createElement("div");
 cardBody.classList.add("card-body");
 card.appendChild(cardBody);
-console.log(cardBody);
+// console.log(cardBody);
 
 // TODO: create h5 heading, span badges in cardBody with classes
 let cardHeadingH5 = document.createElement("h5");
@@ -60,3 +70,23 @@ cardHeadingH5.classList.add("card-title");
 cardHeadingH5.appendChild(document.createTextNode(ITEMS_LIST[2].name));
 cardBody.appendChild(cardHeadingH5);
 // console.log(cardHeadingH5);
+
+let cardSpanFirst = document.createElement("span");
+cardSpanFirst.classList.add("badge", "mb-3");
+if (ITEMS_LIST[2].type == "Weapon") {
+  cardSpanFirst.classList.add("bg-warning");
+} else {
+  cardSpanFirst.classList.add("bg-danger");
+}
+cardSpanFirst.appendChild(document.createTextNode(ITEMS_LIST[2].type));
+cardBody.appendChild(cardSpanFirst);
+// console.log(cardSpanFirst);
+
+let cardSpanSecond = document.createElement("span");
+cardSpanSecond.classList.add("badge", "mb-3", "bg-success");
+if(ITEMS_LIST[2].tradeable) {
+    cardSpanSecond.appendChild(document.createTextNode("Tradeable"));
+}
+cardBody.appendChild(cardSpanSecond);
+// console.log(cardSpanSecond);
+
