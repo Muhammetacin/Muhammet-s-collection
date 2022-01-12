@@ -23,6 +23,7 @@ searchBar.id = "searchBar";
 searchBar.type = "text";
 searchBar.name = "search";
 searchBar.placeholder = "Search items";
+searchBar.classList.add("form-control", "w-25", "text-center");
 searchBar.onkeyup = function() {
     let input = document.getElementById('searchBar').value.toLowerCase();
     let cardTitles = document.querySelectorAll('div.col');
