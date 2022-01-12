@@ -31,7 +31,6 @@ searchBar.onkeyup = function() {
     // console.log(cardTitles);
     cardTitles.forEach((el) => {
         let elementItemTitle = el.children[0].children[1].children[0].innerHTML;
-        console.log(el);
         if (elementItemTitle.toLowerCase().includes(input)) {
             el.style.display = "block";
             el.classList.add("d-flex");
