@@ -17,6 +17,32 @@ let headingH3Items = document.createElement("h3");
 headingH3Items.appendChild(document.createTextNode("Items"));
 section.appendChild(headingH3Items);
 
+// TODO: add searchbar to filter item cards
+let searchBar = document.createElement("input");
+searchBar.id = "searchBar";
+searchBar.type = "text";
+searchBar.name = "search";
+searchBar.placeholder = "Search items";
+searchBar.onkeyup = function() {
+    let input = document.getElementById('searchBar').value.toLowerCase();
+    let cardTitles = document.querySelectorAll('div.col');
+    
+    // console.log(cardTitles);
+    cardTitles.forEach((el) => {
+        let elementItemTitle = el.children[0].children[1].children[0].innerHTML;
+        console.log(el);
+        if (elementItemTitle.toLowerCase().includes(input)) {
+            el.style.display = "block";
+            el.classList.add("d-flex");
+        } 
+        else {
+            el.style.display = "none";
+            el.classList.remove("d-flex");
+        }
+    });
+}
+section.appendChild(searchBar);
+
 // TODO: create div with classes (container div for cards) and add to section, only one is needed for the page
 let containerDiv = document.createElement("div");
 containerDiv.classList.add("row", "d-flex", "flex-column", "flex-md-row", "flex-lg-row", "row-cols-md-2", "row-cols-lg-4", "m-auto", "g-3");
