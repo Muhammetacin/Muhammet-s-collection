@@ -197,3 +197,5 @@ const ITEMS_LIST = [
         description: 'A dragon platebody is the product of combining a dragon chainbody, dragon metal lump, and dragon metal shard at the Dragon Forge.'
     }
 ]
+
+export { ITEMS_LIST };
