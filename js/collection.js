@@ -107,7 +107,7 @@ const ITEMS_LIST = [
     },
     {
         name: 'Dragon boots',
-        type: 'Weapon',
+        type: 'Armour',
         tradeable: 'Yes',
         equipable: 'Yes',
         stackable: 'No',
