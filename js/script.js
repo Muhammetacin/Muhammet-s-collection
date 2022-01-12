@@ -1,3 +1,10 @@
+/**
+ * 
+ * Script file for generating card items from collection.js
+ * Most classes are from Bootstrap v5.1.3
+ * 
+ */
+
 // TODO: import ITEMS_LIST from collection.js
 import { ITEMS_LIST } from "./collection.js";
 
@@ -90,3 +97,20 @@ if(ITEMS_LIST[2].tradeable) {
 cardBody.appendChild(cardSpanSecond);
 // console.log(cardSpanSecond);
 
+// TODO: create paragraph p and button with classes
+let cardText = document.createElement("p");
+cardText.classList.add("card-text");
+cardText.appendChild(document.createTextNode(ITEMS_LIST[2].description));
+cardBody.appendChild(cardText);
+// console.log(cardText);
+
+let cardButtonContainer = document.createElement("div");
+cardButtonContainer.classList.add("text-center");
+cardBody.appendChild(cardButtonContainer);
+
+let cardButton = document.createElement("a");
+cardButton.classList.add("btn", "btn-primary");
+cardButton.appendChild(document.createTextNode("Buy " + ITEMS_LIST[2].name));
+cardButton.href = "#";
+cardButtonContainer.appendChild(cardButton);
+// console.log(cardButton);
