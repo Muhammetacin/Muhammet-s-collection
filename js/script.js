@@ -51,13 +51,13 @@ card.classList.add("card");
 cardContainer.appendChild(card);
 // console.log(card);
 
-// TODO: create imageContainer and append to card
+// TODO: create imageContainer and append to card, for every card needed
 let cardImageContainer = document.createElement("div");
 cardImageContainer.classList.add("img-wrapper");
 card.appendChild(cardImageContainer);
 // console.log(cardImageContainer);
 
-// TODO: create cardImage in cardImageContainer with src, alt and class
+// TODO: create cardImage in cardImageContainer with src, alt and class, for every card needed
 let cardImage = document.createElement("img");
 cardImage.src = ITEMS_LIST[2].image;
 cardImage.alt = ITEMS_LIST[2].examine;
@@ -65,13 +65,13 @@ cardImage.classList.add("card-img-top");
 cardImageContainer.appendChild(cardImage);
 // console.log(cardImage);
 
-// TODO: create cardBody inside card with class
+// TODO: create cardBody inside card with class, for every card needed
 let cardBody = document.createElement("div");
 cardBody.classList.add("card-body");
 card.appendChild(cardBody);
 // console.log(cardBody);
 
-// TODO: create h5 heading, span badges in cardBody with classes
+// TODO: create h5 heading, span badges in cardBody with classes, for every card needed
 let cardHeadingH5 = document.createElement("h5");
 cardHeadingH5.classList.add("card-title");
 cardHeadingH5.appendChild(document.createTextNode(ITEMS_LIST[2].name));
@@ -97,7 +97,7 @@ if(ITEMS_LIST[2].tradeable) {
 cardBody.appendChild(cardSpanSecond);
 // console.log(cardSpanSecond);
 
-// TODO: create paragraph p and button with classes
+// TODO: create paragraph p and button with classes, for every card needed
 let cardText = document.createElement("p");
 cardText.classList.add("card-text");
 cardText.appendChild(document.createTextNode(ITEMS_LIST[2].description));
