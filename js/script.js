@@ -77,6 +77,11 @@ cardHeadingH5.classList.add("card-title");
 cardHeadingH5.appendChild(document.createTextNode(item.name));
 cardBody.appendChild(cardHeadingH5);
 
+let cardHeadingH6 = document.createElement("h6");
+cardHeadingH6.classList.add("card-subtitle", "mb-2", "text-muted");
+cardHeadingH6.appendChild(document.createTextNode(item.examine));
+cardBody.appendChild(cardHeadingH6);
+
 let spanContainer = document.createElement("div");
 cardBody.appendChild(spanContainer);
 
