@@ -37,12 +37,21 @@ containerDiv.appendChild(cardContainer);
 let card = document.createElement("div");
 card.classList.add("card");
 cardContainer.appendChild(card);
-card.onmouseover = function() {
-    card.style.transform = "scale(1.03, 1.03)";
-};
-card.onmouseout = function() {
-    card.style.transform = "scale(1, 1)";
+
+function hoverEffects(cardSelected) {
+    cardSelected.onmouseover = function() {
+        cardSelected.style.transform = "scale(1.03, 1.03)";
+        cardSelected.style.zIndex = 1;
+        cardSelected.style.boxShadow = "0 0 0 9999px #000000b0";
+    };
+    cardSelected.onmouseout = function() {
+        cardSelected.style.transform = "scale(1, 1)";
+        cardSelected.style.zIndex = 0;
+        cardSelected.style.boxShadow = "0 0 0 9999px #00000000";
+    }
 }
+
+hoverEffects(card);
 
 // TODO: create imageContainer and append to card, for every card needed
 let cardImageContainer = document.createElement("div");
