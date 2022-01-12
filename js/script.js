@@ -16,3 +16,8 @@ headingH3Items.appendChild(document.createTextNode("Items"));
 section.appendChild(headingH3Items);
 // console.log(headingH3Items);
 
+// TODO: create div with classes (container div for cards) and add to section
+let containerDiv = document.createElement("div");
+containerDiv.classList.add("row", "d-flex", "flex-column", "flex-md-row", "flex-lg-row", "row-cols-md-2", "row-cols-lg-4", "m-auto", "g-3");
+section.appendChild(containerDiv);
+// console.log(containerDiv);
