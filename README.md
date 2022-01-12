@@ -21,6 +21,18 @@ The cards have an image (which gets pulled from online source) and a body with t
 I create every element from top to bottom. What that means is I create the most outer div block first with all of its classes. Then, I create the first child of that element. For example: cardContainer -> card -> card-image -> img. After I finish that child (and children of child) I continue with the next sibling.
 I find this an easy solution because it's more readable for me. I don't have to return back and implement the children of siblings (I hope that makes sense? ^^').
 
+### Hovering cards
+
+I use a function "hoverEffects" to zoom in on the card. In JavaScript there is an event called 'onmouseover'. What this does is when you place your mouse on the element the function is executed. The opposite of that event is 'onmouseout' which is executed when the mouse exits the element's border. So, when I place mouse on the card I scale it by 1.05 (%5 bigger on x and y axis) and on exit I scale it back to it's original size (1). This gives the effect that the card is zoomed on. Pretty good, right?
+
+### Focus on card and give dark background on every other element
+
+This was a bit confusing for me. I found out that there is a CSS property called box-shadow which puts an overlay on elements. So I use a veeery big overlay so it covers the whole page (0 0 0 9999px) with a very dark color (black with 0.9 opacity). The problem was that when I hovered on cards all cards were lit up and I only wanted just the one I select/hover. The solution to that is another CSS property: z-index. With that you can place elements on the third dimension. So, if I place the card that I want to keep lit on the foreground and all the others on the background (smaller z-index than the selected card) it gives me the correct result.
+
+### Searchbar: search while typing like Google!
+
+
+
 ## Conclusion
 
 I find this a nice and fun project because once you finish it you feel the power of JavaScript. Now, if I want to add new items to my page I just need to add them in my collection and it will automatically have a card generated and will be presented just like the other cards without me writing a single HTML code for it. How awesome is that!?
