@@ -42,6 +42,7 @@ function hoverEffects(cardSelected) {
     cardSelected.onmouseover = function() {
         cardSelected.style.transform = "scale(1.03, 1.03)";
         cardSelected.style.zIndex = 1;
+        cardSelected.style.transition = "0.1s";
         cardSelected.style.boxShadow = "0 0 0 9999px #000000b0";
     };
     cardSelected.onmouseout = function() {
