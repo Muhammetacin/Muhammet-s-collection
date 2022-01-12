@@ -8,11 +8,7 @@
 // TODO: import ITEMS_LIST from collection.js
 import { ITEMS_LIST as item } from "./collection.js";
 
-// ITEMS_LIST.forEach((dragonItem) => {
-//     console.log(dragonItem.name);
-// });
-
-// console.log(ITEMS_LIST);
+const shuffledItemsList = item.sort((a, b) => 0.5 - Math.random());
 
 // TODO: select section to append new children (cards)
 const section = document.querySelector("section");
@@ -86,7 +82,7 @@ cardBody.appendChild(cardSpanFirst);
 // console.log(cardSpanFirst);
 
 let cardSpanSecond = document.createElement("span");
-cardSpanSecond.classList.add("badge", "mb-3", "bg-success");
+cardSpanSecond.classList.add("badge", "mb-3", "ms-1", "bg-success");
 if(item.tradeable) {
     cardSpanSecond.appendChild(document.createTextNode("Tradeable"));
 }
