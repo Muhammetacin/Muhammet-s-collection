@@ -8,7 +8,7 @@ Dynamically generate the cards with the information being pulled from collection
 
 ## My journey: how I did it
 
-I first creat a header with all the static information. A title, a footer, an intro with an image (which shows the full size when clicked on it) and some text with headings. This is hardcoded in HTML file. The whole page is <i>responsive</i>. When the screen gets smaller the image (guy with full dragon equipment) gets under the intro text. The cards are split in 2 columns in tablet screensize and 1 column (all cards in 1 column) in mobile screensize. That is easy to implement thanks to CSS framework Bootstrap.
+I first create a header with all the static information. A title, a footer, an intro with an image (which shows the full size when clicked on it) and some text with headings. This is hardcoded in HTML file. The whole page is <i>responsive</i>. When the screen gets smaller the image (guy with full dragon equipment) gets under the intro text. The cards are split in 2 columns in tablet screensize and 1 column (all cards in 1 column) in mobile screensize. That is easy to implement thanks to CSS framework Bootstrap.
 
 > Source of the texts and images: <https://oldschool.runescape.wiki/w/Dragon_equipment>
 
@@ -27,11 +27,12 @@ I use a function "hoverEffects" to zoom in on the card. In JavaScript there is a
 
 ### Focus on card and give dark background on every other element
 
-This was a bit confusing for me. I found out that there is a CSS property called box-shadow which puts an overlay on elements. So I use a veeery big overlay so it covers the whole page (0 0 0 9999px) with a very dark color (black with 0.9 opacity). The problem was that when I hovered on cards all cards were lit up and I only wanted just the one I select/hover. The solution to that is another CSS property: z-index. With that you can place elements on the third dimension. So, if I place the card that I want to keep lit on the foreground and all the others on the background (smaller z-index than the selected card) it gives me the correct result.
+This was a bit confusing for me. I found out that there is a CSS property called box-shadow which puts an overlay on elements. So I use a veeery big overlay so it covers the whole page (0 0 0 9999px) with a very dark color (black with 0.9 opacity). The problem was that when I hovered on cards all cards were lit up and I only wanted just the one I select/hover. 
+The solution to that is another CSS property: z-index. With that you can place elements on the third dimension. So, if I place the card that I want to keep lit on the foreground and all the others on the background (smaller z-index than the selected card) it gives me the correct result.
 
 ### Searchbar: search while typing like Google!
 
-
+This is the hardest part of this project. How did I do it? I created an input element with an id, placeholder, classes, type, name. Basic HTML. Then, I create an event 'onkeyup' which means that the function will be called when a key on the keyboard is pressed. So with every letter typed in the bar the function is run and filters result while typing!
 
 ## Conclusion
 
