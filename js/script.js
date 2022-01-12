@@ -60,16 +60,19 @@ cardImageContainer.appendChild(cardImage);
 
 // TODO: create cardBody inside card with class, for every card needed
 let cardBody = document.createElement("div");
-cardBody.classList.add("card-body");
+cardBody.classList.add("card-body", "d-flex", "flex-column");
 card.appendChild(cardBody);
 // console.log(cardBody);
 
-// TODO: create h5 heading, span badges in cardBody with classes, for every card needed
+// TODO: create h5 heading, span badges in spanContainer, spanContainer in cardBody with classes, for every card needed
 let cardHeadingH5 = document.createElement("h5");
 cardHeadingH5.classList.add("card-title");
 cardHeadingH5.appendChild(document.createTextNode(item.name));
 cardBody.appendChild(cardHeadingH5);
 // console.log(cardHeadingH5);
+
+let spanContainer = document.createElement("div");
+cardBody.appendChild(spanContainer);
 
 let cardSpanFirst = document.createElement("span");
 cardSpanFirst.classList.add("badge", "mb-3");
@@ -79,7 +82,7 @@ if (item.type == "Weapon") {
     cardSpanFirst.classList.add("bg-danger");
 }
 cardSpanFirst.appendChild(document.createTextNode(item.type));
-cardBody.appendChild(cardSpanFirst);
+spanContainer.appendChild(cardSpanFirst);
 // console.log(cardSpanFirst);
 
 let cardSpanSecond = document.createElement("span");
@@ -87,7 +90,7 @@ cardSpanSecond.classList.add("badge", "mb-3", "ms-1", "bg-success");
 if(item.tradeable) {
     cardSpanSecond.appendChild(document.createTextNode("Tradeable"));
 }
-cardBody.appendChild(cardSpanSecond);
+spanContainer.appendChild(cardSpanSecond);
 // console.log(cardSpanSecond);
 
 // TODO: create paragraph p and button with classes, for every card needed
@@ -98,7 +101,7 @@ cardBody.appendChild(cardText);
 // console.log(cardText);
 
 let cardButtonContainer = document.createElement("div");
-cardButtonContainer.classList.add("text-center");
+cardButtonContainer.classList.add("text-center", "mt-auto");
 cardBody.appendChild(cardButtonContainer);
 
 let cardButton = document.createElement("a");
