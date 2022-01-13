@@ -44,7 +44,17 @@ section.appendChild(searchBar);
 
 // TODO: create div with classes (container div for cards) and add to section, only one is needed for the page
 let containerDiv = document.createElement("div");
-containerDiv.classList.add("row", "d-flex", "flex-column", "flex-md-row", "flex-lg-row", "row-cols-md-2", "row-cols-lg-4", "m-auto", "g-3");
+containerDiv.classList.add(
+  "row",
+  "d-flex",
+  "flex-column",
+  "flex-md-row",
+  "flex-lg-row",
+  "row-cols-md-2",
+  "row-cols-lg-4",
+  "m-auto",
+  "g-3"
+);
 section.appendChild(containerDiv);
 
 // ALL THE CODE BELOW IS NECESSARY FOR EVERY CARD SO
@@ -142,3 +152,9 @@ item.forEach((item) => {
   cardButton.target = "_blank";
   cardButtonContainer.appendChild(cardButton);
 });
+
+// EXTRA: adding favicon to page
+const link = document.createElement("link");
+link.rel = "icon";
+link.href = item[0].image;
+document.getElementsByTagName("head")[0].appendChild(link);
